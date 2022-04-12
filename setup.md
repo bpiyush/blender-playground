@@ -1,4 +1,4 @@
-This example is based on the [CLEVR dataset](https://github.com/facebookresearch/clevr-dataset-gen)
+This example is based on the [CLEVR dataset](https://github.com/facebookresearch/clevr-dataset-gen). The recommended version of Blender is 2.78/2.90.
 
 1. Download and install blender from [here](https://www.blender.org/download/)
 2. Add paths to your `.bashrc` or `.zshrc` for handy shortcuts
@@ -13,4 +13,11 @@ export BLENDER_SITE_PACKAGES=${BLENDER_HOME}/python/lib/python3.10/site-packages
 3. Add image generation folder to Blender python's path:
 ```
 echo $PWD/image_generation >> $BLENDER_SITE_PACKAGES/clevr.pth
+```
+
+4. Installing custom packages in Blender Python
+```bash
+cd $
+BLENDER290_PYTHON -m ensurepip
+BLENDER290_PYTHON -m pip install ipdb
 ```
